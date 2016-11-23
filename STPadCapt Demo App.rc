@@ -1,0 +1,216 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\STPadCaptDemoApp.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""     // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STPADCAPTDEMOAPP_DIALOG DIALOGEX 0, 0, 223, 280
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "signotec Pad Capture Control Demo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Get Devices",IDC_BUTTONDEVCOUNT,6,18,66,15
+    LISTBOX         IDC_LISTOFDEVICES,78,19,41,49,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTONOPENCLOSE,6,36,66,15,WS_DISABLED
+    PUSHBUTTON      "Clear Display",IDC_BUTTONCLEARDISPLAY,6,54,66,15,WS_DISABLED
+    PUSHBUTTON      "Start",IDC_BUTTONSTARTCANCEL,6,112,66,15,WS_DISABLED
+    PUSHBUTTON      "Retry",IDC_BUTTONRETRY,78,112,66,15,WS_DISABLED
+    PUSHBUTTON      "OK",IDC_BUTTONOK,150,112,66,15,WS_DISABLED
+    CONTROL         146,IDC_PICTUREBOXLCD,"Static",SS_BITMAP,4,130,213,148
+    CONTROL         "",IDC_STPADCAPTCTRL1,
+                    "{3946312B-1829-4D4F-A2DF-CD35C8908BA1}",NOT WS_VISIBLE | WS_TABSTOP,4,130,214,146
+    CONTROL         "Type: -",IDC_LABELTYPE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,6,72,10
+    CONTROL         "Firmware: -",IDC_LABELFIRMWARE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,30,48,10
+    CONTROL         "Serial: -",IDC_LABELSERIAL,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,42,90,10
+    CONTROL         "Display: -",IDC_LABELDISPLAY,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,54,80,10
+    LTEXT           "This application only demonstrates some of the features of the signotec Pad Capture Control. Please take a look at the Visual Basic 6, Visual Basic.NET or C# demo applications for a full demonstration!",IDC_STATIC,8,72,205,36
+    CONTROL         "Port: -",IDC_LABELPORT,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,126,18,72,10
+    CONTROL         "HID Devices",IDC_CHECKHID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,4,52,12
+    CONTROL         "Serial Devices",IDC_CHECKSERIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,4,59,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,28,0
+ PRODUCTVERSION 1,0,28,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704e4"
+        BEGIN
+            VALUE "CompanyName", "signotec GmbH"
+            VALUE "FileDescription", "Demo Application for ActiveX-Control from signoPAD-API"
+            VALUE "FileVersion", "1.0.28.0"
+            VALUE "InternalName", "STPadCapt Demo App.exe"
+            VALUE "LegalCopyright", "Copyright © 2000-2012, signotec GmbH. All Rights Reserved."
+            VALUE "OriginalFilename", "STPadCapt Demo App.exe"
+#ifdef _WIN64
+            VALUE "ProductName", "signotec Pad Capture Control Demo Application (x64)"
+#else
+            VALUE "ProductName", "signotec Pad Capture Control Demo Application (x86)"
+#endif
+            VALUE "ProductVersion", "1.0.28.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STPADCAPTDEMOAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_STPADCAPTDEMOAPP_DIALOG DLGINIT
+BEGIN
+    IDC_STPADCAPTCTRL1, 0x376, 42, 0
+0x0000, 0x0000, 0x000c, 0x0002, 0x212d, 0x0000, 0x187f, 0x0000, 0x0000, 
+0x0000, 0x6400, 0x0000, 0xee00, 0x0079, 0xff00, 0xffff, 0x0000, 0xff00, 
+0x0000, 0x0200, 0x0100, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DEFAULTBITMAP_SIGMA BITMAP                  "res\\DefaultBitmap_sigma.bmp"
+IDB_DEFAULTCANCEL_SIGMA BITMAP                  "res\\DefaultCancel_sigma.bmp"
+IDB_DEFAULTOK_SIGMA     BITMAP                  "res\\DefaultOK_sigma.bmp"
+IDB_LOGO_SIGMA          BITMAP                  "res\\Logo_sigma.bmp"
+IDB_LOGO_OMEGA          BITMAP                  "res\\Logo_omega.bmp"
+IDB_DEFAULTBITMAP_OMEGA BITMAP                  "res\\DefaultBitmap_omega.bmp"
+IDB_DEFAULTCANCEL_OMEGA BITMAP                  "res\\DefaultCancel_omega.bmp"
+IDB_DEFAULTOK_OMEGA     BITMAP                  "res\\DefaultOK_omega.bmp"
+IDB_DEFAULTRETRY_OMEGA  BITMAP                  "res\\DefaultRetry_omega.bmp"
+IDB_DEFAULTSCROLL_OMEGA BITMAP                  "res\\DefaultScroll_omega.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON                    "res\\STPadCapt_Demo_App.ico"
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#include "res\STPadCaptDemoApp.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"     // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
